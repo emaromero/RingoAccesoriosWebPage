@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;1,300&family=Bebas+Neue&family=Montserrat:wght@100;300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+/*CSS rules to specify families
+font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;*/
+body {
+  font-family: "montserrat" "cursive";
+  background-image: url(/imagenes/fondoMarmol.jpg);
+  margin: 15px;
+  padding-top: 15px;
+  position: relative;
+  /*letter-spacing: 1px;*/
+}
+
+h1, h2 {
+  font-family: "bebas neue";
+  color: black;
+  text-align: center;
+  font-size: 60px;
+  margin: 10px 10px 1px 10px;
+  padding: 1rem;
+}
+
+.title {
+  padding-top: 0px;
+  padding-bottom: 2rem;
+  margin-top: 20px;
+}
+
+p {
+  background-color: rgba(255, 255, 255, 0.842);
+  margin: 20px 20px;
+  padding: 10px 5px;
+  font-size: 20px;
+  font-family: 'Be Vietnam Pro';
+}
+
+#logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: logo;
+          animation-name: logo;
+  -webkit-animation-iteration-count: none;
+          animation-iteration-count: none;
+}
+
+#logo img {
+  image-orientation: center;
+  width: 400px;
+  height: auto;
+}
+
+.navbar {
+  font-size: 1.2rem;
+  font-family: bebas neue;
+  text-transform: uppercase;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 1px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.navbar .navbar-collapse {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(255, 255, 255, 0.685);
+}
+
+.navbar a {
+  color: black;
+  -webkit-transition: all 700ms ease;
+  transition: all 700ms ease;
+}
+
+.navbar a .navbar-brand {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar a:hover {
+  color: #41b2b6;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+.bg-light {
+  background-color: rgba(255, 255, 255, 0.411) !important;
+}
+
+.iconn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+}
+
+.img-logo {
+  width: 250px;
+}
+
+.tituloss {
+  letter-spacing: 5px;
+  font-family: bebas neue;
+  text-transform: uppercase;
+  color: white;
+  font-size: 50px;
+}
+
+.card-img-filter {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+.copyrightContenedor {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid black;
+}
+
+.copyrightt {
+  font-size: 12px;
+  opacity: 0.7;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.cajaMiCuenta {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+}
+
+.formulario {
+  background: #D3CCE3;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#E9E4F0), to(#D3CCE3));
+  background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 3px;
+}
+
+h3 {
+  font-family: bebas neue;
+  font-size: 30px;
+  text-align: center;
+  color: #1a2537;
+}
+
+input[type="text"],
+input[type="password"] {
+  font-size: 15px;
+  width: 82%;
+  padding: 10px 10px;
+  border: none;
+}
+
+.inputMicuenta {
+  background: white;
+  margin-bottom: 15px;
+  border: .5px solid #aaa;
+}
+
+.icon {
+  margin: 0px;
+  min-width: 20px;
+  text-align: center;
+  color: #999;
+}
+
+.boton {
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background: #c471ed;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background: #12c2e9;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#f64f59), color-stop(#c471ed), to(#12c2e9));
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.pAbajo {
+  text-align: center;
+}
+
+.linkM {
+  text-decoration: none;
+  color: #1a2537;
+  font-weight: 600;
+}
+
+.link:hover {
+  color: cadetblue;
+}
+
+@media (min-width: 768px) {
+  .formulario {
+    margin: auto;
+    width: 500px;
+    margin-top: 15px;
+    border-radius: 2%;
+  }
+  .pAbajo {
+    font-size: 10px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: auto;
+    width: auto;
+    margin-top: 15px;
+  }
+}
+
+.ayudin {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+p {
+  color: cadetblue;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+h4 {
+  font-size: 4em;
+}
+
+.item-3 {
+  width: 300px;
+}
+
+.item-1 {
+  width: 100px;
+}
+
+.prueba {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.color:nth-child(1) {
+  background-color: #75acad;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+}
+
+.color:nth-child(2) {
+  background-color: #8cb9bb;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+}
+
+.color:nth-child(3) {
+  background-color: #a2c7c8;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+}
+
+.color:nth-child(4) {
+  background-color: #b9d4d5;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+}
+
+.color-red {
+  border: red solid;
+  color: red;
+  background-color: red;
+  text-align: center;
+  margin: 5px 5px 50px 10px;
+}
+
+.color-red :hover {
+  cursor: pointer;
+}
+
+.color-blue {
+  border: blue solid;
+  color: blue;
+  background-color: blue;
+  text-align: center;
+  margin: 5px 5px 50px 10px;
+}
+
+.color-blue :hover {
+  cursor: pointer;
+}
+
+.color-orange {
+  border: orange solid;
+  color: orange;
+  background-color: orange;
+  text-align: center;
+  margin: 5px 5px 50px 10px;
+}
+
+.color-orange :hover {
+  cursor: pointer;
+}
+
+.color-violet {
+  border: violet solid;
+  color: violet;
+  background-color: violet;
+  text-align: center;
+  margin: 5px 5px 50px 10px;
+}
+
+.color-violet :hover {
+  cursor: pointer;
+}
+
+.btn--boxi1 skyblue {
+  background-color: boxi1 skyblue;
+  border: 5px solid  black;
+}
+
+.btn--boxi2 coral {
+  background-color: boxi2 coral;
+  border: 5px solid  black;
+}
+
+.btn--boxi3 magenta {
+  background-color: boxi3 magenta;
+  border: 5px solid  black;
+}
+
+.btn--boxi4 lightblue {
+  background-color: boxi4 lightblue;
+  border: 5px solid  black;
+}
+
+.ayudin label {
+  font-family: bebas neue;
+  letter-spacing: .5px;
+  margin: 0px;
+  width: 100%;
+}
+
+.botonn {
+  display: inline-block;
+  border: none;
+  color: black;
+  font-size: 12px;
+  background: #11998e;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#38ef7d), to(#11998e));
+  background: linear-gradient(to bottom, #38ef7d, #11998e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 5px;
+  cursor: pointer;
+  width: 48%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.botonn input {
+  background: none;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.botonn:hover {
+  background: #11998e;
+}
+
+.boton:hover {
+  background: #ff8cf9;
+}
+/*# sourceMappingURL=style.css.map */

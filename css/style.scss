@@ -1,0 +1,322 @@
+*{  
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;1,300&family=Bebas+Neue&family=Montserrat:wght@100;300&display=swap');
+
+/*CSS rules to specify families
+font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;*/
+
+body{
+    font-family: "montserrat" "cursive";
+    background-image: url(/imagenes/fondoMarmol.jpg);
+    margin: 15px;
+    padding-top: 15px;
+    position: relative;
+
+    /*letter-spacing: 1px;*/
+}
+
+h1, h2{
+    font-family: "bebas neue"; 
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 60px;
+    margin: 10px 10px 1px 10px;
+    padding: 1rem;
+}
+
+.title{
+    padding-top: 0px;
+    padding-bottom: 2rem;
+    margin-top: 20px;
+}
+
+p{
+    background-color: rgba(255, 255, 255, 0.842);
+    margin: 20px 20px;
+    padding: 10px 5px;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro';
+    
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation-duration: 1s;
+    animation-name: logo;
+    animation-iteration-count: none;
+    img{ 
+        image-orientation: center;
+        width: 400px;
+        height: auto;
+    }
+}
+
+
+.navbar{
+    font-size: 1.2rem;
+    font-family: bebas neue ;
+    text-transform: uppercase ;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 1px;
+    transition: all 500ms ease;
+        .navbar-collapse{
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.685);
+        }
+        a{
+            color: black;
+            transition: all 700ms ease;
+                .navbar-brand{
+                    justify-content: center;
+                }
+        }
+        a:hover{
+            color: rgb(65, 178, 182);
+            text-decoration: solid;
+        }
+}
+
+.bg-light{
+    background-color: rgba(255, 255, 255, 0.411) !important;
+}
+.iconn{
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+.img-logo{
+    width: 250px;
+}
+.tituloss{
+    letter-spacing: 5px;
+    font-family: bebas neue;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    }
+
+.card-img-filter{
+    filter: brightness(0.7);
+}
+
+.copyrightContenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+}
+.copyrightt{
+    font-size: 12px;
+    opacity: 0.7;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.cajaMiCuenta{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+}
+
+.formulario{
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    padding: 3px;
+}
+
+h3{
+    font-family: bebas neue;
+    font-size: 30px;
+    text-align: center;
+    color: #1a2537;
+}
+input[type="text"], 
+input[type="password"]{
+    font-size: 15px;
+    width: 82%;
+    padding: 10px 10px;
+    border: none;
+}
+.inputMicuenta{
+    background: white;
+    margin-bottom: 15px;
+    border: .5px solid #aaa;
+}
+.icon{
+    margin: 0px;
+    min-width: 20px;
+    text-align: center;
+    color: #999;
+}
+.boton{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #c471ed;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.boton:hover{
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.pAbajo{
+    text-align: center;
+}
+.linkM{
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+.link:hover{
+    color: cadetblue
+}
+@media(min-width:768px){
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 15px;
+        border-radius: 2%;
+    }
+    .pAbajo{
+        font-size: 10px;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        margin: auto;
+        width: auto;
+        margin-top: 15px;
+    }
+}
+
+.ayudin{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+$color: rojo;
+p{
+    @if ($color == azul) {
+        color: red;
+    } @else{
+        color: cadetblue;
+    }
+}
+
+@for $i from 2 through 4 {
+    h#{$i} {
+        font-size: $i * 1em;
+    }
+}
+
+$i:3;
+@while $i>0 {
+    .item-#{$i}{
+        width: 100px * $i;
+    }
+    $i: $i - 2;
+}
+
+.prueba{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+@for $i from 1 to 5 {
+    .color:nth-child(#{$i}){
+        background-color: lighten(cadetblue, $i*7);
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+        margin: 10px 10px 10px 10px;
+    }
+    
+}
+
+$palette:
+    red,
+    blue,
+    orange,
+    violet;
+
+@each $color in $palette{
+    .color-#{$color}{
+        border: $color solid;
+        color: $color;
+        background-color: $color;
+        text-align: center;
+        margin: 5px 5px 50px 10px;
+        :hover{
+            cursor: pointer;
+        }
+    }
+}
+
+$palettes: (
+    boxi1: skyblue,
+    boxi2: coral,
+    boxi3: magenta,
+    boxi4: lightblue,
+);
+
+@each $boxi in $palettes {
+    .btn--#{$boxi}{
+        background-color: $boxi;
+        border: 5px solid  black;
+    }
+}
+
+.ayudin label{ 
+    font-family: bebas neue;
+    letter-spacing: .5px;
+    margin: 0px;
+    width: 100%;
+}
+
+.botonn{
+    display: inline-block;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+    text-align: center;
+    justify-content: center;
+}
+.botonn input{
+    background: none;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    text-align: center;
+
+}
+.botonn:hover{
+    background: #11998e;
+}
+
+.boton:hover{
+    background: rgb(255, 140, 249);
+}
