@@ -98,16 +98,10 @@ p{
 .img-logo{
     width: 250px;
 }
-.tituloss{
-    letter-spacing: 5px;
-    font-family: bebas neue;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    font-size: 50px;
-    }
 
 .card-img-filter{
     filter: brightness(0.7);
+    font-family: bebas neue;
 }
 
 .copyrightContenedor{
@@ -208,115 +202,4 @@ input[type="password"]{
     width: 100%;
     padding: 15px;
     margin-top: 5px;
-}
-
-$color: rojo;
-p{
-    @if ($color == azul) {
-        color: red;
-    } @else{
-        color: cadetblue;
-    }
-}
-
-@for $i from 2 through 4 {
-    h#{$i} {
-        font-size: $i * 1em;
-    }
-}
-
-$i:3;
-@while $i>0 {
-    .item-#{$i}{
-        width: 100px * $i;
-    }
-    $i: $i - 2;
-}
-
-.prueba{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-@for $i from 1 to 5 {
-    .color:nth-child(#{$i}){
-        background-color: lighten(cadetblue, $i*7);
-        padding: 10px 10px 10px 10px;
-        text-align: center;
-        margin: 10px 10px 10px 10px;
-    }
-    
-}
-
-$palette:
-    red,
-    blue,
-    orange,
-    violet;
-
-@each $color in $palette{
-    .color-#{$color}{
-        border: $color solid;
-        color: $color;
-        background-color: $color;
-        text-align: center;
-        margin: 5px 5px 50px 10px;
-        :hover{
-            cursor: pointer;
-        }
-    }
-}
-
-$palettes: (
-    boxi1: skyblue,
-    boxi2: coral,
-    boxi3: magenta,
-    boxi4: lightblue,
-);
-
-@each $boxi in $palettes {
-    .btn--#{$boxi}{
-        background-color: $boxi;
-        border: 5px solid  black;
-    }
-}
-
-.ayudin label{ 
-    font-family: bebas neue;
-    letter-spacing: .5px;
-    margin: 0px;
-    width: 100%;
-}
-
-.botonn{
-    display: inline-block;
-    border: none;
-    color: rgb(0, 0, 0);
-    font-size: 12px;
-    background: #11998e;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
-    border-radius: 5px;
-    cursor: pointer;
-    width: 48%;
-    text-align: center;
-    justify-content: center;
-}
-.botonn input{
-    background: none;
-    border: none;
-    padding: 15px 20px;
-    cursor: pointer;
-    text-align: center;
-
-}
-.botonn:hover{
-    background: #11998e;
-}
-
-.boton:hover{
-    background: rgb(255, 140, 249);
 }
